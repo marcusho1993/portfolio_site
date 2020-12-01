@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include ../partials/head.ejs %>
+
+<body>
+  <!-- Main Nav -->
+  <%- include ../partials/main_nav.ejs %>
+
+  <main>
+    <!-- Hero -->
+    <div class="jumbotron d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-1 col-12 text-center title"><%=title%></h1>
+        <% if(title == 'Bueiness Contacts') { %>
+        <%- include('./partials/contact-list.ejs') -%>
+        <% } else if(title == 'Add New Contact') { %>
+        <%- include('./partials/add-contact.ejs') -%>
+        <% } else if(title == 'Edit Contact') { %>
+        <%- include('./partials/edit-contact.ejs') -%>
+        <% } %>
+      </div>
+    </div>
+    </div>
+    <!-- Main Footer -->
+    <%- include ../partials/footer.ejs %>
+  </main>
+
+  <!-- scripts -->
+  <%- include ../partials/scripts.ejs %>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+/* 
+File: app.css
+Author: Hoi Fong Ho
+StudentID: 301084469
+Date: Oct 24, 2020
+*/
+
+/* media query for mid-size screen */
+@media only screen and (max-width: 992px) {
+
+    /* Title */
+    .title {
+        margin-bottom: 50px;
+    }
+
+    /* About*/
+    .info img {
+        width: 75%;
+        height: 75%;
+    }
+
+    /* Contact Form */
+    #contact-form .form-group,
+    #contact-form textarea {
+        margin: 0 auto;
+    }
+
+    #contact-form textarea {
+        margin-bottom: 20px;
+    }
+
+    /* Projects */
+    .card-img-top {
+        width: 70% !important;
+        align-self: center;
+    }
+
+    .card-title {
+        font-size: 200%;
+    }
+
+    .card-text {
+        font-size: 110%;
+        width: 70%;
+        margin: 15px 15%;
+    }
+
+    .card-footer {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+}
+
+/* media query for sm-size screen */
+@media only screen and (max-width: 576px) {
+
+    /* Title */
+    .title {
+        margin-bottom: 30px;
+    }
+
+    /* Projects */
+    .card-img-top {
+        width: 100% !important;
+    }
+
+    .card-title {
+        font-size: 150%;
+    }
+
+    .card-text {
+        font-size: 90%;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    /* About*/
+    .info img {
+        width: 60%;
+        height: 60%;
+        order: 1;
+    }
+
+    .summary {
+        order: 2;
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .qualities-section {
+        order: 3;
+    }
+
+    .info .qualities {
+        height: 300px;
+        margin: 5px 0;
+    }
+
+    .resume {
+        order: 4;
+    }
+}

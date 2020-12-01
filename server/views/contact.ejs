@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include partials/head.ejs %>
+
+<body>
+  <!-- Main Nav -->
+  <%- include partials/main_nav.ejs %>
+
+  <main>
+    <!-- Hero -->
+    <div class="jumbotron d-flex align-items-center contact">
+      <div class="container text-center">
+        <h1 class="display-1 col-12 text-center title"><%=title%></h1>
+
+        <!-- Contact Info -->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="h5"><a href="mailto: marcusho1993@gmail.com"><i class="fas fa-3x fa-envelope"></i></a></div>
+          </div>
+          <div class="col-4">
+            <div class="h5"><a href="tel:+16475630399"><i class="fas fa-3x fa-mobile"></i></a></div>
+          </div>
+          <div class="col-4">
+            <a href="https://www.linkedin.com/in/hoi-fong-marcus-ho-685988102/"><img class="linkedin"
+                src="/Assets/icons/linkedin-brands.svg" alt="Marcus Ho's Linkedin profile url"></a>
+          </div>
+          <!-- Contact Form -->
+          <div class="col-12">
+            <%- include partials/contact-form.ejs %>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Main Footer -->
+    <%- include partials/footer.ejs %>
+  </main>
+
+  <!-- scripts -->
+  <%- include partials/scripts.ejs %>
+</body>
+
+</html>

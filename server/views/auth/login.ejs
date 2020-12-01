@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include ../partials/head.ejs %>
+
+<body>
+  <!-- Main Nav -->
+  <%- include ../partials/main_nav.ejs %>
+
+  <main>
+    <!-- Hero -->
+    <div class="jumbotron d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-1 col-12 text-center title"><%=title%></h1>
+        <div class="row justify-content-center">
+          <!-- message area -->
+          <% if(messages.length > 0) { %>
+          <div class="alert alert-danger col-lg-4 col-md-6">
+            <%= messages %>
+          </div>
+          <%}%>
+      </div>
+        <div class="d-flex justify-content-center">
+  
+          <form method="POST" class="col-lg-4 col-md-6" autocomplete="off">
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" id="username">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" id="password">
+            </div>
+            <input type="submit" class="btn btn-info" value="Login"></input>
+            <a href="/">
+              <input type="button" class="btn btn-warning" value="Cancel"></input>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <%- include ../partials/footer.ejs %>
+  </main>
+
+  <!-- scripts -->
+  <%- include ../partials/scripts.ejs %>
+</body>
+
+</html>

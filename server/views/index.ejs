@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include partials/head.ejs %>
+
+<body>
+  <!-- Main Nav -->
+  <%- include partials/main_nav.ejs %>
+  <main>
+    <!-- Hero container -->
+    <div class="jumbotron d-flex align-items-center ">
+      <div class="container text-center">
+        <h1 class="display-1 col-12 text-center title">
+          <% if(title == "Home"){%>
+          Welcome
+          <%}else if(title =="About"){%>
+          Hoi Fong Ho
+          <%}else{%>
+          <%=title%>
+          <%}%></h1>
+
+        <!-- Content-->
+        <%- include('partials/' + content) %>
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <%- include partials/footer.ejs %>
+  </main>
+  <!-- scripts -->
+  <%- include partials/scripts.ejs %>
+</body>
+
+</html>

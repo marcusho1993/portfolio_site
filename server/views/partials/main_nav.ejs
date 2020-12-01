@@ -1,0 +1,68 @@
+<!-- Main Nav -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+
+    <!--Logo-->
+    <a class="navbar-brand" href="/home"><img class="logo" src="/Assets/images/logo.svg"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav item container -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <!--Nav items-->
+            <!-- Home -->
+            <% if(title == "Home") {%>
+            <li class="nav-item active">
+                <% }else{%>
+            <li class="nav-item">
+                <% } %>
+                <a class="nav-link" href="/home">HOME</a>
+            </li>
+            <!-- About-->
+            <% if(title == "About") {%>
+            <li class="nav-item active">
+                <% }else{%>
+            <li class="nav-item">
+                <% } %>
+                <a class="nav-link" href="/about">ABOUT</a>
+            </li>
+            <!-- Projects -->
+            <% if(title == "Projects") {%>
+            <li class="nav-item active">
+                <% }else{%>
+            <li class="nav-item">
+                <% } %>
+                <a class="nav-link" href="/projects">PROJECTS</a>
+            </li>
+            <!-- Services -->
+            <% if(title == "Services") {%>
+            <li class="nav-item active">
+                <% }else{%>
+            <li class="nav-item">
+                <% } %>
+                <a class="nav-link" href="/services">SERVICES</a>
+            </li>
+            <!-- Contact-->
+            <% if(title == "Contact") {%>
+            <li class="nav-item active">
+                <% }else{%>
+            <li class="nav-item">
+                <% } %>
+                <a class="nav-link" href="/contact">CONTACT</a>
+            </li>
+            <!-- Login/Logout -->
+            <% if(typeof displayName == 'string' && displayName){ %>
+            <li class="nav-item active">
+                <a class="nav-link" href="/logout">LOGOUT</a>
+            </li>
+            <% } else { %>
+            <li class="nav-item active">
+                <a class="nav-link" href="/login">LOGIN</a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</nav>
